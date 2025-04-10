@@ -4,7 +4,7 @@
 
 registration_project/
 │
-├── backend/
+
 │   ├── registration_project/
 │   │   ├── __init__.py
 │   │   ├── asgi.py
@@ -47,7 +47,7 @@ Copy
 Edit
 registration_project/
 │
-├── backend/
+
 │   ├── registration_project/
 │   ├── registration/            ← Django app
 │   ├── static/                  ← CSS & JS
@@ -75,8 +75,8 @@ Git (optional, for cloning)
 bash
 Copy
 Edit
-git clone https://github.com/your-username/registration_project.git
-cd registration_project/backend
+git clone https://github.com/kirand2002/INI8LABS_ASSESMENT.git
+cd registration_project
 
 🔹 Step 2: Create & Activate Virtual Environment
 Windows:
@@ -139,3 +139,5 @@ templates/	HTML templates
 serializers.py	For API serialization (DRF)
 
 manage.py	Django CLI script
+
+Contributions are welcome! Feel free to fork the repository, open issues, or submit pull requests to improve this project.
