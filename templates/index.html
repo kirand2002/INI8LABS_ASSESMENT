@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+  
+</head>
+<body>
+
+  <h1>User Registration</h1>
+  
+
+  <form id="registrationForm">
+    {% csrf_token %}
+    <input type="hidden" id="userId" />
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email Address" required />
+    <input type="date" id="dob" placeholder="Date of Birth" required />
+    <input type="text" id="phone" placeholder="Phone Number" />
+    <button type="submit">Submit</button>
+    <button type="reset" onclick="clearForm()">Clear</button>
+  </form>
+  <br/><br/>
+
+  <h2>Registered Users</h2>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>Phone</th>
+        <th>Created At</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+ 
+
+</body>
+<script src="{% static "js/script.js" %}"></script>
+</html>
+
